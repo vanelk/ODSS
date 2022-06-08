@@ -1,10 +1,26 @@
 import './App.css';
-import { Button } from '@mui/material';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import Home from './pages/home';
+import ScanPage from './pages/scanPage';
 function App() {
   return (
-    <div className="App">
-      <Button variant="contained">Contained</Button>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/">
+        <Route index element={<Home />} />
+        <Route path="scan" element={<ScanPage />} />
+        {/* <Route path="teams" element={<Teams />}>
+          <Route path=":teamId" element={<Team />} />
+          <Route index element={<LeagueStandings />} />
+        </Route> */}
+      </Route>
+    </Routes>
+  </BrowserRouter>
+
   );
 }
 
