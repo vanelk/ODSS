@@ -1,7 +1,16 @@
 import React from 'react';
 import { Button, Avatar, Grid } from '@mui/material';
+import {useNavigate} from 'react-router-dom';
+
 
 export default function Home() {
+
+    const navigate = useNavigate();
+  
+    const navigateStartHone = () => {
+        navigate("/start_home");
+    }
+
    
   return (
     <div>
@@ -15,11 +24,11 @@ export default function Home() {
 
         <Grid container  spacing={{xs: 1}} columns={{xs: 1}} direction="column" alignItems="center" justifyContent="center">
             <Grid item xs={2} sm={4}>
-                <Button variant="contained" sx={{margin: "auto"}}>Scan Shop QR Code</Button>
+                <Button variant="contained" sx={{margin: "auto"}} onClick={navigateStartHone}>Scan Shop QR Code</Button>
             </Grid>
         
             <Grid item xs={2} sm={4}>
-                <Button variant="contained" sx={{margin: "auto"}}>Manual Entering Shop ID</Button>  
+                <Button variant="contained" sx={{margin: "auto"}} onClick={navigateStartHone}>Manual Entering Shop ID</Button>  
             </Grid>
         </Grid>
 

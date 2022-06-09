@@ -1,7 +1,15 @@
 import React from 'react';
 import { Button, Typography, Avatar, Grid } from '@mui/material';
+import {useNavigate} from 'react-router-dom';
 
 export default function HomeB(){
+
+    const navigate = useNavigate();
+  
+    const navigateHone = () => {
+        navigate("/home");
+    }
+
     return (
         <>
                  <br /><br />
@@ -19,7 +27,7 @@ export default function HomeB(){
                         </Typography>
                     </Grid>
                     <Grid item xs={2} sm={4}>
-                        <Button variant="contained" size="large">Start Shopping</Button>
+                        <Button variant="contained" size="large" onClick={navigateHone}>Start Shopping</Button>
                     </Grid>
                 </Grid>
         </>
