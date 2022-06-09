@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './pages/home';
 import ScanPage from './pages/scanPage';
-import HomeB from './pages/homeb';
+import HomeWelcome from './pages/homeWelcome';
 function App() {
   return (
     <BrowserRouter>
@@ -14,7 +14,7 @@ function App() {
       <Route path="/">
         <Route index element={<Home />} />
         <Route path="scan" element={<ScanPage />} />
-        <Route path="home" element={<HomeB />}/>
+        <Route path="home" element={<HomeWelcome />}/>
         {/*  <Route path=":teamId" element={<Team />} />
           <Route index element={<LeagueStandings />} />
         </Route> */}
