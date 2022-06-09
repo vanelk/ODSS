@@ -9,6 +9,7 @@ import HomeB from './pages/homeb';
 import ScanPage from './pages/scanPage';
 import HomeWelcome from './pages/homeWelcome';
 import ItemDetails from './pages/itemDetails';
+import ItemList from './pages/itemList';
 function App() {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ function App() {
         <Route path="scan" element={<ScanPage />} />
         <Route path="home" element={<HomeWelcome />}/>
         <Route path="item" element={<ItemDetails />} />
+        <Route path="list" element={<ItemList />} />
         {/*  <Route path=":teamId" element={<Team />} />
           <Route index element={<LeagueStandings />} />
         </Route> */}
