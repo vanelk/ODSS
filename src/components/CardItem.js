@@ -1,9 +1,9 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export default function CardItem({image, title}) {
+export default function CardItem({image, title, price}) {
     return (
-        <Card sx={{ width: 200 }}>
+        <Card sx={{ maxWidth: '100%' }}>
             <Link to="/item">
             <CardActionArea>
                 <CardMedia
@@ -15,6 +15,9 @@ export default function CardItem({image, title}) {
                 <CardContent>
                     <Typography gutterBottom variant="h6" component="div">
                         {title}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                        Price: {price}
                     </Typography>
                 </CardContent>
             </CardActionArea>

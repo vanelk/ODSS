@@ -32,7 +32,7 @@ export default function HomeWelcome() {
                     <SearchIcon />
                 </IconButton>
             </Paper>
-            <Box sx={{mt: 3, display: 'grid', gridTemplateColumns: '1fr 1fr', gridColumnGap: '8px'}}>
+            <Box sx={{mt: 3, display: 'grid', gridTemplateColumns: '1fr 1fr', gridColumnGap: '8px', maxWidth: '100%'}}>
                 <CardItem image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&w=1000&q=80"
                     title="Headset"
                 ></CardItem>
