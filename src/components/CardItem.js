@@ -1,8 +1,10 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function CardItem({image, title}) {
     return (
         <Card sx={{ width: 200 }}>
+            <Link to="/item">
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -16,6 +18,7 @@ export default function CardItem({image, title}) {
                     </Typography>
                 </CardContent>
             </CardActionArea>
+            </Link>
             <CardActions>
                 <Button>Add to list</Button>
             </CardActions>

@@ -2,9 +2,7 @@ import { Avatar, Divider, IconButton, InputBase, Paper, Typography } from '@mui/
 import { Box } from '@mui/system'
 import React from 'react'
 import BottomNav from '../components/BottomNav'
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import DirectionsIcon from '@mui/icons-material/Directions';
 import CardItem from '../components/CardItem';
 
 export default function HomeWelcome() {
