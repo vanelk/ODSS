@@ -8,7 +8,9 @@ export default function Home() {
         
         <Avatar
         alt ="ODSS Logo"
-        sx={{width: 90, height: 90}}> Logo </Avatar>
+        sx={{width: 90, height: 90}}>
+             Logo 
+        </Avatar>
         <br />
         <Button variant="contained">Scan Shop QR Code</Button>
         <br /><br />
