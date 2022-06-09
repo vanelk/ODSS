@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Typography, Box, Grid } from '@mui/material';
 
 export default function ItemDetails() {
+ 
   return (
     <div>
         <Box
@@ -17,6 +18,29 @@ export default function ItemDetails() {
           alt="The house from the offer."
           src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmFuZG9tJTIwb2JqZWN0c3xlbnwwfHwwfHw%3D&w=1000&q=80"
       />
+
+      <Grid container spacing={{xs: 4}} columns={{xs: 6}} direction="row" alignItems="center" justifyContent="center">
+            <Grid item xs={3}>
+                <Typography variant="h5" component="h5">
+                   Product Name: Headset
+                </Typography>
+            </Grid>
+            <Grid item xs={3}>
+                <Typography variant="h5" component="h5">
+                   Price: $100
+                </Typography>
+            </Grid>
+            <Grid item xs={3}>
+                <Typography variant="h5" component="h5">
+                   Description: Headset to be use with Phones
+                </Typography>
+            </Grid>
+            <Grid item xs={3}>
+              
+            </Grid>
+      </Grid>
+
+      <Button variant="contained" size="large" sx={{ position: 'absolute', right: 40,  bottom: 20}}>Add To Cart</Button>
     </div>
   )
 }
