@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function homeWelcome() {
+export default function HomeWelcome() {
   return (
-    <div>homeWelcome</div>
+    <div>H</div>
   )
 }

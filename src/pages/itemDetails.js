@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function itemDetails() {
+export default function ItemDetails() {
   return (
-    <div>itemDetails</div>
+    <div>I</div>
   )
 }
